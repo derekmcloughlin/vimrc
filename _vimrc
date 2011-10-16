@@ -32,6 +32,7 @@ Bundle 'vim-scripts/actionscript.vim'
 Bundle 'vim-scripts/python_match.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'gregsexton/gitv'
+Bundle 'oscarh/vimerl'
 
 set backupdir=~/tmp
 set ignorecase 
