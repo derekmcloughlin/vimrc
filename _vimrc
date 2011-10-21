@@ -33,6 +33,7 @@ Bundle 'vim-scripts/python_match.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'gregsexton/gitv'
 Bundle 'oscarh/vimerl'
+Bundle 'vim-scripts/VimClojure'
 
 set backupdir=~/tmp
 set ignorecase 
@@ -144,7 +145,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Filtering key bindings
 nnoremap ,F :call Gather(input("Filter on term: "), 0)<CR>
-nnoremap ,f :call Gather(@/, 0)<CR>:echo<CR>
+nnoremap ,f :call FilteringNew().addToParameter('alt', @/).run()<CR>
 nnoremap ,g :call GotoOpenSearchBuffer()<CR>
 nnoremap ,d :call CloseAllSearchWindows()<CR>
 
